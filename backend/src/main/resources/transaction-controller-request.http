@@ -1,0 +1,10 @@
+POST {{host}}/api/transaction/v1/create
+Content-Type: application/json
+Authorization: Bearer //Paste authorization header content (Bearer token) here
+
+{
+  "type": "PURCHASE",
+  "stockTicker": "AAPL",
+  "price": 173.00,
+  "quantity": 10
+}

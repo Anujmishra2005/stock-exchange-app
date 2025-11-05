@@ -1,0 +1,28 @@
+POST {{host}}/api/public/user/v1/register
+Content-Type: application/json
+
+{
+  "username": "test",
+  "email": "test@test.pl",
+  "password": "Start00!"
+}
+
+###
+
+POST {{host}}/api/public/user/v1/login
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "Start00!"
+}
+
+###
+
+GET {{host}}/api/user/v2/wallet
+Authorization: Bearer //Paste authorization header content (Bearer token) here
+
+###
+
+GET {{host}}/api/user/v2/stocks
+Authorization: Bearer //Paste authorization header content (Bearer token) here

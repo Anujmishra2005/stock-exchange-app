@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+application:
+  jwt.secretKey: 11111111111111111111111111111111
+
+frontend.url: http://localhost:5173
+
+logging:
+  level:
+    com.s1gawron.stockexchange: DEBUG
